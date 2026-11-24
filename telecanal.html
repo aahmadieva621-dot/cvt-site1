@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телеканалы</title>
+    <link rel="stylesheet" href="css/telecanal.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="img/sign.png" alt="Логотип">
+                <p class="header__logo-name">Видеосервис</p>
+            </div>
+            <form action="#" class="header__form">
+                <input type="text" class="header__search" placeholder="Поиск...">
+                <input type="button" value="Найти" class="header__search-button">
+            </form>
+            <div class="header__auth-guest js-guest-view">
+                <button type="button" class="header__input js-open-modal">Войти</button>
+            </div>
+            <div class="header__auth-user js-auth-view">
+                <span class="header__user-name js-username"></span>
+                <button type="button" class="header__logout js-logout">Выйти</button>
+            </div>
+        </header>
+
+        <main>
+            <nav class="nav">
+                <a class="nav_a" href="index.html">Фильмы</a>
+                <a class="nav_a nav_a--active" href="telecanal.html">Телеканалы</a>
+            </nav>
+
+            <div class="scroll">
+                <div class="first channel-card">
+                    <div class="first_logo channel-logo">
+                       <img src="img/logos/logo-3.png" alt="Первый канал">
+                    </div>
+                    <div class="time channel-schedule">
+                        <p class="h2 channel-title">Первый канал</p>
+                        <div class="time_a time_ar schedule-row">
+                            <p class="schedule-time">13:00</p>
+                            <p class="time__a-a">Новости (с субтитрами)</p>
+                        </div>
+                        <div class="time_a schedule-row">
+                            <p class="schedule-time">14:00</p>
+                            <p class="time__a-a">Давай поженимся</p>
+                        </div>
+                        <div class="time_a schedule-row">
+                            <p class="schedule-time">15:00</p>
+                            <p class="time__a-a">Другие новости</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second channel-card">
+                    <div class="second_logo channel-logo">
+                     <img src="img/logos/logo-2.png" alt="2x2">
+                    </div>
+                    <div class="tim channel-schedule">
+                        <p class="h3 channel-title">2x2</p>
+                        <div class="tim_a tim_ar schedule-row">
+                            <p class="schedule-time">13:00</p>
+                            <p class="tim__a-a">МУЛЬТ ТВ. Сезон 4,7 серия</p>
+                        </div>
+                        <div class="tim_a schedule-row">
+                            <p class="schedule-time">14:00</p>
+                            <p class="tim__a-a">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7,7 серия</p>
+                        </div>
+                        <div class="tim_a schedule-row">
+                            <p class="schedule-time">15:00</p>
+                            <p class="tim__a-a">БУРДАШЕВ. Сезон 1,20 серия</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="third channel-card">
+                    <div class="third_logo channel-logo">
+                       <img src="img/logos/logo-1.png" alt="РБК">
+                    </div>
+                    <div class="ti channel-schedule">
+                        <p class="h4 channel-title">РБК</p>
+                        <div class="ti_a ti_ar schedule-row">
+                            <p class="schedule-time">13:00</p>
+                            <p class="ti__a-a">ДЕНЬ. Как бороться с суррогатом на АЗС</p>
+                        </div>
+                        <div class="ti_a schedule-row">
+                            <p class="schedule-time">14:00</p>
+                            <p class="ti__a-a">ДЕНЬ. Главные темы</p>
+                        </div>
+                        <div class="ti_a schedule-row">
+                            <p class="schedule-time">15:00</p>
+                            <p class="ti__a-a">Главные новости</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fourth channel-card">
+                    <div class="fourth_logo channel-logo">
+                        <img src="img/logos/logo.png" alt="AMEDIA PREMIUM">
+                    </div>
+                    <div class="t channel-schedule">
+                        <p class="h5 channel-title">AMEDIA PREMIUM</p>
+                        <div class="t_a t_ar schedule-row">
+                            <p class="schedule-time">13:00</p>
+                            <p class="t__a-a">Клиент всегда мёртв</p>
+                        </div>
+                        <div class="t_a schedule-row">
+                            <p class="schedule-time">14:00</p>
+                            <p class="t__a-a">Голодные игры: Сойка-пересмешница. Часть |</p>
+                        </div>
+                        <div class="t_a schedule-row">
+                            <p class="schedule-time">15:00</p>
+                            <p class="t__a-a">Секс в большом городе</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fifth channel-card">
+                    <div class="fifth_logo channel-logo">
+                        <img class="disney" src="img/disney-full.png" alt="Disney">
+                    </div>
+                    <div class="d channel-schedule">
+                        <p class="h6 channel-title">Disney</p>
+                        <div class="d_a d_ar schedule-row">
+                            <p class="schedule-time">13:00</p>
+                            <p class="d__a-a">Леди Баг и Супер Кот. Сезон 3,7 серия</p>
+                        </div>
+                        <div class="d_a schedule-row">
+                            <p class="schedule-time">14:00</p>
+                            <p class="d__a-a">Зверополис 2</p>
+                        </div>
+                        <div class="d_a schedule-row">
+                            <p class="schedule-time">15:00</p>
+                            <p class="d__a-a">Гравити Фолз. Сезон 2,8серия</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <img src="img/Vector.png" alt="logo" class="footer_logo">
+            <div class="footer_info">
+                <p class="footer_info-p">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                <p class="footer_info-p">+7 (3412) 93-88-61, 43-29-29</p>
+                <a class="footer_info-a" href="https://htc-cs.ru">htc-cs.ru</a>
+            </div>
+        </div>
+    </footer>
+
+    <dialog class="modal-dialog js-dialog">
+        <div class="modal-content">
+            <p class="inp">Вход</p>
+            <form action="#" method="post" class="login-form">
+                <label class="form-group">
+                    <input class="form-groupi" type="text" name="Login" placeholder="Логин" required>
+                </label>
+                <label class="form-group">
+                    <input class="form-groupi" type="password" name="Password" placeholder="Пароль" required>
+                </label>
+                <label class="remember-me">
+                    <input class="remember-mech" type="checkbox">
+                    <span>Запомнить</span>
+                </label>
+                <button type="submit" class="inl">Войти</button>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
