@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: RubikM;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: RubikR;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+body {
+    overflow-x: hidden;
+    font-family: RubikR, sans-serif;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Шапка (мобильная база) */
+.header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    order: 1;
+}
+
+.header__logo-name {
+    font-family: RubikM, sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-left: 11.88px;
+}
+
+.header__auth-guest,
+.header__auth-user {
+    order: 2;
+}
+
+.header__input {
+    border: none;
+    color: white;
+    font-family: RubikM, sans-serif;
+    font-size: 14px;
+    background-color: #E5261E;
+    width: 96px;
+    height: 34px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header__input:hover {
+    background-color: #CC221B;
+}
+
+.header__auth-user {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    font-family: RubikM, sans-serif;
+    font-size: 16px;
+}
+
+.header__logout {
+    border: none;
+    background: transparent;
+    color: #E5261E;
+    font-family: RubikM, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header__form {
+    order: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__search {
+    width: 100%;
+    flex: 1;
+    height: 25px;
+    border: none;
+    border-bottom: 1px #333 solid;
+    font-family: RubikM, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.header__search:focus {
+    outline: none;
+}
+
+.header__search::placeholder {
+    font-size: 16px;
+    font-family: RubikR, sans-serif;
+    color: #828282;
+}
+
+.header__search-button {
+    border: none;
+    margin-left: 16px;
+    color: #e5261e;
+    font-family: RubikM, sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Навигация */
+.nav {
+    margin: 28px auto 24px auto;
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+}
+
+.nav_a {
+    font-family: RubikM, sans-serif;
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav_a:hover,
+.nav_a--active {
+    border-bottom: 2px #E5261E solid;
+    padding-bottom: 6px;
+    color: #E5261E;
+}
+
+/* Карточки телеканалов (вертикально на мобильном) */
+.scroll {
+    overflow-y: visible;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+    min-height: auto;
+    width: 100%;
+    margin: 0 auto 16px auto;
+    padding: 16px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.fifth {
+    margin-bottom: 0;
+}
+
+.first_logo,
+.second_logo,
+.third_logo,
+.fourth_logo,
+.fifth_logo {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.first_logo img,
+.second_logo img,
+.third_logo img,
+.fourth_logo img,
+.fifth_logo img {
+    max-height: 48px;
+    width: auto;
+}
+
+.disney {
+    max-width: 90px;
+}
+
+.h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-family: RubikM, sans-serif;
+    color: #333;
+}
+
+.time, .tim, .ti, .t, .d {
+    width: 100%;
+}
+
+.time_ar, .tim_ar, .ti_ar, .t_ar, .d_ar {
+    color: #E5261E;
+}
+
+.time_a, .tim_a, .ti_a, .t_a, .d_a {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: RubikR, sans-serif;
+    line-height: 1.3;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    margin-top: 44px;
+    padding: 24px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer_info {
+    margin-left: 0;
+}
+
+.footer_info-p {
+    font-size: 14px;
+    font-family: RubikR, sans-serif;
+    color: #333;
+}
+
+.footer_info-a {
+    color: #1f4766;
+    font-family: RubikM, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer_info-p:nth-child(2) {
+    margin: 6px 0 8px 0;
+}
+
+/* Модальное окно */
+.modal-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+}
+
+.modal-dialog {
+    width: 304px;
+    max-width: calc(100vw - 32px);
+    padding: 36px;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+}
+
+.inp {
+    font-size: 28px;
+    font-family: RubikM, sans-serif;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-groupi {
+    width: 100%;
+    border: none;
+    border-bottom: 1px #333333 solid;
+    font-family: RubikR, sans-serif;
+    font-size: 16px;
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+.remember-mech {
+    margin-right: 8px;
+}
+
+.remember-me {
+    font-family: RubikR, sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.inl {
+    background-color: #E5261E;
+    color: white;
+    width: 113px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    margin: 48px auto 0 auto;
+    font-family: RubikM, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ==================================================
+   ДЕСКТОПНАЯ ВЕРСИЯ (экраны от 768px и шире)
+   ================================================== */
+@media (min-width: 768px) {
+    .header {
+        margin-top: 32px;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .header__logo {
+        order: unset;
+    }
+
+    .header__auth-guest,
+    .header__auth-user {
+        order: unset;
+    }
+
+    .header__input {
+        width: 113px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .header__form {
+        order: unset;
+        width: auto;
+        display: inline-flex;
+    }
+
+    .header__search {
+        width: 320px;
+    }
+
+    .header__search-button {
+        margin-left: 32px;
+    }
+
+    .nav {
+        margin: 44px auto 32px auto;
+        max-width: 311px;
+        height: 42px;
+    }
+
+    .nav_a {
+        font-size: 28px;
+    }
+
+    .scroll {
+        max-height: 600px;
+        overflow-y: auto;
+        padding-right: 4px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth {
+        min-height: 162px;
+        max-width: 920px;
+        margin: 0 auto 16px auto;
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .first_logo,
+    .second_logo,
+    .third_logo,
+    .fourth_logo,
+    .fifth_logo {
+        width: 320px;
+        height: 162px;
+        justify-content: center;
+    }
+
+    .first_logo img,
+    .second_logo img,
+    .third_logo img,
+    .fourth_logo img,
+    .fifth_logo img {
+        max-height: none;
+    }
+
+    .h2, .h3, .h4, .h5, .h6 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .time, .tim, .ti, .t, .d {
+        flex: 1;
+    }
+
+    .time_a, .tim_a, .ti_a, .t_a, .d_a {
+        font-size: 16px;
+        gap: 16px;
+        margin-bottom: 12px;
+    }
+
+    .footer {
+        margin-top: 72px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
+    .footer_info {
+        margin-left: 39.98px;
+    }
+
+    .footer_info-p {
+        font-size: 16px;
+    }
+
+    .footer_info-a {
+        font-size: 16px;
+    }
+}
